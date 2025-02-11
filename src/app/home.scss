@@ -1,0 +1,15 @@
+.home_section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 24px 0;
+  font-family: var(--font-manrope);
+  background: #f6f6f9;
+}
+
+.home_wrapper {
+  display: flex;
+  gap: 48px;
+  max-width: 1328px;
+  width: 100%;
+}

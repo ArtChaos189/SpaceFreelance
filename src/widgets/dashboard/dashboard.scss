@@ -1,0 +1,105 @@
+.dashboard {
+  width: 100%;
+  max-width: 880px;
+}
+
+.cards_wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.card_tasks,
+.card_clients,
+.card_oneTask {
+  width: 100%;
+  max-width: 288px;
+  padding: 24px 48px;
+  border-radius: 24px;
+
+  .header {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
+
+.card_tasks {
+  border: 1px solid #e8dbf3;
+  background: radial-gradient(50% 50% at 0 0, #d908ef38 0%, #f9f3fe38 100%),
+    radial-gradient(50% 50% at 100% 100%, #4108c638 0%, #f9f3fe38 100%), #f7eeff;
+  background-size: 107% 231%, 127% 223%;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.card_clients {
+  border: 1px solid #f2e1e6;
+  background: radial-gradient(50% 50% at 0% 0%, rgba(65, 8, 198, 0.22) 0%, rgba(249, 243, 254, 0.22) 100%),
+    radial-gradient(50% 50% at 100% 100%, rgba(65, 8, 198, 0.22) 0%, rgba(249, 243, 254, 0.22) 100%), #ffeff3;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.card_oneTask {
+  border: 1px solid #f3e6d6;
+  background: radial-gradient(50% 50% at 0% 0%, rgba(217, 8, 239, 0.22) 0%, rgba(249, 243, 254, 0.22) 100%),
+    radial-gradient(50% 50% at 100% 100%, rgba(65, 8, 198, 0.22) 0%, rgba(249, 243, 254, 0.22) 100%), #fff4e7;
+  background-size: 102% 229%, 50% 50%;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.search_sort {
+  margin: 24px 0;
+  display: flex;
+  gap: 16px;
+}
+
+.search_wrapper {
+  width: 100%;
+  max-width: 749px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .search_icon {
+    position: absolute;
+    left: 16px;
+  }
+
+  .search_input {
+    padding: 14px;
+    width: 100%;
+    padding-left: 39px;
+    border-radius: 16px;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    color: #484848;
+    font-size: 16px;
+  }
+
+  .search_input::placeholder {
+    color: #484848;
+  }
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14.5px 16px;
+  border-radius: 100px;
+  border: 1px solid #dfdfdf;
+  color: #7239ea;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  cursor: pointer;
+}
